@@ -1,0 +1,27 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"homepage": "http://Febrio123/income-expense",
+	"proxy": "http://localhost:3001",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon app.js",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2",
+		"gh-pages": "^6.1.1",
+		"pg": "^8.11.3",
+		"sequelize": "^6.33.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1",
+		"sequelize-cli": "^6.6.1"
+	}
+}
